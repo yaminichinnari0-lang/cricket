@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CrickConnect</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+        /* Hero */
+        .hero2 {
+            background: linear-gradient(to right, #1b7f3a, darkgreen);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 120px;
+        }
+
+        /* Search */
+        .search-box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-box input {
+            width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Coaches */
+        .coach-container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .rating {
+            color: orange;
+        }
+         .speciality {
+                color: #ff4000;      
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 15px;
+}
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #1b7f3a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Responsive */
+        /* Coaches Grid Fix */
+.coach-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Card size auto */
+.card {
+    width: 100%;
+}
+
+/* 🔥 Tablet */
+@media(max-width: 992px) {
+    .coach-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 🔥 Mobile */
+@media(max-width: 600px) {
+    .coach-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero2 h1 {
+        font-size: 28px;
+    }
+
+    .hero2 p {
+        font-size: 14px;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+
+<!-- Hero -->
+<div class="hero2">
+    <h1 style="font-size:50px; font-weight:bold;">OUR COACHES</h1>
+    <p>Connect with certified professionals,who are passionate about nurturing rural talent.</p>
+</div>
+
+<!-- Search -->
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search by name, skill or location...">
+</div>
+
+<!-- Coaches -->
+<div class="coach-container">
+
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <div class="header-row">
+            <h2 >RAJESH KUMAR</h2>
+            <p class="speciality">Fast Bowling</p>
+            <span class="rating">⭐ 4.9</span> </div>
+                      <p> 15 Years exp.          </p>
+           <p class="location">📍Chennai,TamilNadu</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <h2 >SUNIL PATEL</h2>
+            <p class="speciality" >Batting Technique</p>
+            <p class="rating">⭐ 4.8</p>
+            <p> 12 Years exp.                  </p>
+             <p class="location">📍Pune,Maharashtra</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <h2 >ANITA SHARMA</h2>
+            <p class="speciality" >Spin Bowling</p>
+            <p class="rating">⭐ 4.7</p>
+            <p> 10 Years exp.                  </p>
+             <p class="location">📍Jaipur,Rajasthan</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <h2 >VIKRAM REDDY</h2>
+<p class="speciality" >wicket Keeping</p>
+            <p class="rating">⭐ 4.6</p>
+            <p> 8 Years exp.                 </p>
+             <p class="location">📍Hyderabad,Telangana</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <h2 >PRIYA DESAI</h2>
+            <p class="speciality" >All Rounder Trainer</p> 
+            <p class="rating">⭐ 4.9</p>
+            <p> 11 Years exp.                  </p>
+             <p class="location">📍Mumbai,Maharashtra</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://b1803438.smushcdn.com/1803438/wp-content/uploads/2014/10/Double_Call_Out_453x255_RS_Coach.jpg?lossy=1&strip=1&webp=1">
+        <div class="card-content">
+            <h2 >MOHAMMED IRFAN</h2>
+            <p class="speciality" > Pace Bowling</p>
+            <p class="rating">⭐ 4.7</p>
+            <p> 14 Years exp.                  </p>
+             <p class="location">📍Lucknow,UP</p>
+            <button class="btn">Connect</button>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script src="index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+  const searchInput = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".card");
+
+  searchInput.addEventListener("input", function () {
+    const value = searchInput.value.toLowerCase();
+
+    cards.forEach(function (card) {
+      const text = card.textContent.toLowerCase();
+
+      if (text.includes(value)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>

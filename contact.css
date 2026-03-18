@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    font-family: sans-serif;
+}
+
+.contact-text{
+    background-color: darkgreen;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    min-height: 210px;
+    text-align: center;
+}
+.contact-text h1{
+    font-size: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+.contact-text p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.full{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;   
+}
+.info-box{
+    margin-left: 60px;
+}
+.info-box h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.info-box .like{
+    font-size: 20px;
+    color: black;
+    font-family: Inter;
+    font-weight: bold;
+}
+.main{
+    color: gray;
+    font-family: sans-serif;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.contact-form{
+    display: grid;
+    padding: 30px;
+    line-height: 2;
+    margin-top: 70px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+}
+.contact-form p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 13px;
+    margin-bottom: 5px;
+
+}
+input{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+}
+textarea{
+    height: 120px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.contact-form button{
+    background-color: darkgreen;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+@media (max-width: 768px){
+
+    .contact-text h1{
+        font-size: 35px;
+    }
+
+    .contact-text{
+        min-height: auto;
+        padding: 30px 10px;
+    }
+
+    .full{
+        grid-template-columns: 1fr; 
+    }
+
+    .info-box{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    input{
+        padding: 10px;
+    }
+
+    textarea{
+        padding: 10px;
+    }
+}

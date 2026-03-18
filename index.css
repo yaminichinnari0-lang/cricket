@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:999;
+}
+
+
+.modal-box{
+  background:#fff;
+  color: black;
+  width:600px;
+  max-width:90%;
+  margin:6% auto;
+  padding:30px;
+  border-radius:15px;
+  overflow-y: auto;
+  text-align:center;
+  position:relative;
+}
+
+.close{
+  position:absolute;
+  color: black;
+  right:15px;
+  top:10px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.sub{
+  color:gray;
+  margin-bottom:20px;
+}
+
+.card-container{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+}
+
+.card,.card2{
+  flex:1;
+  border:2px solid #ddd;
+  border-radius:15px;
+  padding:20px;
+  text-decoration:none;
+  color:black;
+  transition:0.3s;
+}
+
+.card:hover{
+  border-color:green;
+  transform:scale(1.05);
+}
+.card2:hover{
+    border-color: red;
+    transform: scale(1.05);
+}
+.icon{
+  font-size:40px;
+  margin-bottom:10px;
+}
+.row{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+  margin-bottom:10px;
+  color: #1c1c1c;
+}
+.rowsingle{
+    grid-template-columns: 1fr;
+}
+.row,.rowsingle p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.row input, .row select{
+  color: #1c1c1c;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+
+textarea{
+  height:80px;
+  color: #1c1c1c;
+}
+
+.btn button ,.btn1 button{
+  width:100%;
+  text-align: center;
+  background:green;
+  color:white;
+  padding:12px;
+  border:none;
+  font-weight: bold;
+  border-radius:5px;
+  margin-top:10px;
+}
+.btn1 button{
+    background-color: red;
+}
+/* video apploading */
+.upload-box{
+  margin-top:15px;
+}
+
+.upload-label{
+  font-weight:bold;
+  font-size:14px;
+  display:block;
+  margin-bottom:8px;
+  color:#333;
+}
+
+.upload-area{
+  border:2px dashed #ccc;
+  padding:30px;
+  text-align:center;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.upload-area:hover{
+  border-color:green;
+  background:#f9f9f9;
+}
+
+.upload-area p{
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.upload-area span{
+  font-size:12px;
+  color:gray;
+}
+/* end */
+
+.gold{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.hero{
+    font-family: 'playfair display' ,serif;
+    font-size: 24px;
+    color: darkgreen;
+}
+nav a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s;
+}
+nav a:hover,a:focus{
+    color: darkgreen;
+}
+nav button{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.new{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 60, 0, 0.782), rgba(0, 60, 0, 0.777)), url("../images/cricket.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.new-content .gold{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.show{
+    font-size: 80px;
+    font-family: sans-serif;
+}
+.footer-container{
+    display: grid;
+    border: 4px solid #1c1c1c;
+    background: #1c1c1c;
+    backdrop-filter: blur(40px);
+    margin-top: 100px;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-logo{
+    color: #d4af37;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer-col p{
+    margin-left: 15px;
+    font-size: 15px;
+    color: antiquewhite;
+}
+.footer-col{
+    margin-left: 100px;
+}
+.footer-col h3{
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.special{
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+.old{
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.btn-container .register,.coach{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 100, 0, 0.936);
+    padding: 15px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-container .coach{
+    background-color: white;
+    color: black;
+}
+.btn-container .register:hover{
+    color: goldenrod;
+}
+.btn-container .coach:hover,:focus{
+    color: goldenrod;
+}
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+align-items:center;
+}
+.hero button{
+    text-align: right;
+}
+
+nav{
+margin-top:5px;
+margin-bottom: 5px;
+}
+
+nav a{
+margin:8px;
+display:inline-block;
+}
+html,body{
+width:100%;
+overflow-x:hidden;
+}
+.new{
+    margin-top: 70px;
+}
+.new-content{
+width:100%;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.show{
+font-size:50px;
+}
+
+.old{
+font-size:14px;
+padding:0 20px;
+}
+
+.modal-box{
+    width: 80%;
+    height: 75%;
+    margin: 30% auto;
+    padding: 15px;
+    scroll-behavior: auto;
+}
+.btn-container{
+display:flex;
+justify-content:center;
+gap:10px;
+}
+
+.btn-container button{
+width:50%;
+}
+
+.footer-container{
+grid-template-columns:repeat(auto-fit,minmax(200px,3fr));
+text-align:center;
+}
+
+.footer-col{
+margin-top: 5px;
+margin-left: 3px;
+padding: 20px;
+}
+}
+

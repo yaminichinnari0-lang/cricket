@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CrickConnect</title>
+
+    <!-- Google Font -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+
+        }
+        /* HERO */
+        .hero2 {
+            background: linear-gradient(to right, #1b7f3a,darkgreen);
+            color: white;
+            margin-top: 100px;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero2 h1 {
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .hero2 p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* PROCESS SECTION */
+        .process {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .process small {
+            color: #888;
+            letter-spacing: 2px;
+        }
+
+        .process h2 {
+            font-size: 32px;
+            margin-top: 10px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .step-box {
+            width: 280px;
+            background: #f9f9f9;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+
+        .step-box i {
+            font-size: 30px;
+            color: #1b7f3a;
+            margin-bottom: 10px;
+        }
+
+        .step-box h4 {
+            color: #d9534f;
+            font-size: 12px;
+
+        }
+        .step-box h3,p{
+            color: black;
+        }
+
+
+
+
+        /* WHY SECTION */
+        .why {
+            text-align: center;
+            padding: 60px 20px;
+            background: #fafafa;
+        }
+
+        .why h2 {
+            font-size: 28px;
+        }
+
+        .highlight {
+            color: #d9534f;
+        }
+
+        .why-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .why-box {
+            width: 200px;
+        }
+
+        .why-box i {
+            font-size: 28px;
+            color: #1b7f3a;
+        }
+
+        .why-box h4 {
+            margin-top: 10px;
+        }
+
+        .why-box p {
+            font-size: 13px;
+            color: #666;
+        }
+        /* 📱 MOBILE ONLY */
+@media(max-width: 768px){
+
+    /* Hero */
+    .hero2 {
+        padding: 50px 15px;
+        margin-top: 150px;
+    }
+
+    .hero2 h1 {
+        font-size: 26px;
+    }
+
+    .hero2 p {
+        font-size: 14px;
+    }
+
+    /* Process section */
+    .steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .step-box {
+        width: 90%;
+    }
+
+    .process h2 {
+        font-size: 24px;
+    }
+
+    /* Why section */
+    .why-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .why-box {
+        width: 90%;
+        text-align: center;
+    }
+
+    .why h2 {
+        font-size: 22px;
+    }
+
+    /* icons */
+    .step-box i,
+    .why-box i {
+        font-size: 24px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="hero2">
+        <h1>HOW IT WORKS</h1>
+        <p>Our simple 3-step process connects rural talent with professional coaching.</p>
+    </div>
+
+    <!-- PROCESS -->
+    <div class="process">
+        <small style="color:red"> SIMPLE PROCESS</small>
+        <h2>HOW IT WORKS</h2>
+
+        <div class="steps">
+            <div class="step-box">
+                <i class="fa fa-user-plus"></i>
+                <h4>STEP 1</h4>
+                <h3>SIGN UP</h3>
+                <p>Register as a player or coach. Share your skills, location and journey.</p>
+            </div>
+
+            <div class="step-box">
+                <i class="fa fa-search"></i>
+                <h4>STEP 2</h4>
+                <h3>GET MATCHED</h3>
+                <p>Connect with professional coaches based on your skill level.</p>
+            </div>
+
+            <div class="step-box">
+                <i class="fa fa-handshake"></i>
+                <h4>STEP 3</h4>
+                <h3>TRAIN & GROW</h3>
+                <p>Receive coaching and opportunities to showcase your talent.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY -->
+    <div class="why">
+        <h2>WHY CHOOSE <span class="highlight">CRICKCONNECT?</span></h2>
+
+        <div class="why-container">
+            <div class="why-box">
+                <i class="fa fa-users"></i>
+                <h4>Community Driven</h4>
+                <p>Join a network of passionate players and coaches.</p>
+            </div>
+
+            <div class="why-box">
+                <i class="fa fa-bolt"></i>
+                <h4>Fast Matching</h4>
+                <p>Get matched with the right coach quickly.</p>
+            </div>
+
+            <div class="why-box">
+                <i class="fa fa-shield"></i>
+                <h4>Verified Coaches</h4>
+                <p>All coaches go through verification process.</p>
+            </div>
+
+            <div class="why-box">
+                <i class="fa fa-check-circle"></i>
+                <h4>Free for Players</h4>
+                <p>Basic matching is completely free.</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

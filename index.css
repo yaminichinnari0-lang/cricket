@@ -201,7 +201,7 @@ nav button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 60, 0, 0.782), rgba(0, 60, 0, 0.777)), url("../images/cricket.jpg");
+    background: linear-gradient(rgba(0, 60, 0, 0.782), rgba(0, 60, 0, 0.777)), url("cricket.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(10px);

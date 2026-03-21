@@ -47,6 +47,161 @@ document.getElementById("footer").innerHTML =
         </div>
 </footer>
 `;
+document.getElementById("modal").innerHTML =
+`
+ <div class="modal-box">
+    
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2>JOIN CRICKCONNECT</h2>
+    <p class="sub">Choose how you'd like to be part of the cricket revolution.</p>
+
+    <div class="card-container">
+
+      <a href="#" onclick="openPlayerModal()" class="card">
+        <div class="icon">👤</div>
+        <h3>REGISTER AS PLAYER</h3>
+        <p>Showcase your talent & get discovered by top coaches</p>
+      </a>
+
+      <a href="#" onclick="openCoachModal()" class="card2">
+        <div class="icon">🎓</div>
+        <h3>BECOME A COACH</h3>
+        <p>Train grassroots talent & shape the future of cricket</p>
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="playerModal" class="modal">
+    <div class="modal-box">
+        <span class="close" onclick="closePlayerModal()">x</span>
+        <h2>PLAYER REGISTRATION</h2>
+        <form action="https://formsubmit.co/yaminichinnari0@gmail.com" method="POST">
+            <div class="row">
+                <div>
+                <p>FULL NAME *</p>
+                <input type="text" placeholder="Enter you name" required>
+                </div>
+                <div>
+                <p>AGE * </p>
+                <input type="number" placeholder="your age" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                <p>EMAIL *</p>
+                <input type="email" placeholder="Enter your mail" required>
+                </div>
+                <div>
+                <p>PHONE *</p>
+                <input type="text" placeholder="your phone no" required>
+                </div>
+                </div>
+                <div class="rowsingle">
+                    <div>
+                <p>VILLAGE/CITY *</p>
+                <input type="text" placeholder="eg.,Rajasthan,Hyderabad" required>
+                </div>
+                </div>
+            <div class="row">
+                <div>
+                <p>PLAYING ROLE *</p>
+                <select>
+                    <option>Batsman</option>
+                    <option>Bowler</option>
+                    <option>Wicket Keeper</option>
+                    <option>All Rounder</option>
+                </select>
+                </div>
+                <div>
+                <P>EXPERIENCE</P>
+                 <input type="number" placeholder="eg.,3years">
+                 </div>
+                </div>
+                <div class="rowsingle">
+                 <p>ABOUT YOU</p>
+                 <textarea placeholder="Tell us about your cricket journey..."></textarea>
+                 </div>
+                 <div class="upload-box">
+                 <label class="upload-label">📹 UPLOAD TALENT VIDEO</label>
+  
+                 <div class="upload-area" onclick="document.getElementById('videoInput').click()">
+                 <p>⬆ Click to upload or drag & drop</p>
+                <span>MP4, MOV, AVI • Max 50MB</span>
+               </div>
+               <input type="file" id="videoInput" accept="video/*" hidden>
+                </div>
+                 <div class="btn">
+                 <button>SUBMIT REGISTRATION</button>
+                 </div>
+           
+        </form>
+    </div>
+</div>
+<div id="coachModal" class="modal">
+    <div class="modal-box">
+        <span class="close" onclick="closeCoachModal()">x</span>
+        <h2>COACH REGISTRATION</h2>
+        <form action="https://formsubmit.co/yaminichinnari0@gmail.com" method="POST">
+            <div class="row">
+                <div>
+                <p>FULL NAME *</p>
+                <input type="text" placeholder="Enter you name" required>
+                </div>
+                <div>
+                <p>AGE * </p>
+                <input type="number" placeholder="your age" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                <p>EMAIL *</p>
+                <input type="email" placeholder="Enter your mail" required>
+                </div>
+                <div>
+                <p>PHONE *</p>
+                <input type="text" placeholder="your phone no" required>
+                </div>
+                </div>
+                <div class="rowsingle">
+                    <div>
+                <p>VILLAGE/CITY *</p>
+                <input type="text" placeholder="eg.,Rajasthan,Hyderabad" required>
+                </div>
+                </div>
+            <div class="row">
+                <div>
+                <p>SPECIALIZATION *</p>
+                <select>
+                    <option>Batsman Coach</option>
+                    <option>Bowler Coach</option>
+                    <option>Wicket Keeper Coach</option>
+                    <option>All Rounder Coach</option>
+                </select required>
+                </div>
+                <div>
+                <P>EXPERIENCE *</P>
+                 <input type="number" placeholder="eg.,10years" required>
+                 </div>
+                </div>
+                <div class="rowsingle">
+                 <p>CERTIFICATIONS *</p>
+                 <input type="text" placeholder="eg.,BCCI Level 2,NCA Certified" required>
+                 </div>
+                <div class="rowsingle">
+                 <p>ABOUT YOU *</p>
+                 <textarea placeholder="Tell us about your coaching philosopy and experience..."></textarea>
+                 </div>
+                 <div class="btn1">
+                 <button>SUBMIT REGISTRATION</button>
+                 </div>
+           
+        </form>
+    </div>
+`;
 function openModal(){
   document.getElementById("modal").style.display = "block";
 }
